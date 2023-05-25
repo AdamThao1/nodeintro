@@ -23,7 +23,7 @@ const server = http.createServer((req,res) => {
             res.end() //this would end the program
 
 
-        })
+        });
         
         
         //here we want node to let us know what html file we are on using our url
@@ -46,8 +46,8 @@ if(req.url === "/api"){
         res.end()
     });
 }
-})
+});
 server.listen(port, (err)=>{
     if (err) console.log("ERROR", err.message);
     console.log(`listening on port ${port}`)
-})
+});
